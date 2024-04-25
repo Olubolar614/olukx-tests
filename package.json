@@ -1,0 +1,27 @@
+{
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.ts",
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-html/cucumber-report.html"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
+    },
+    "json": {
+      "enabled": true,
+      "formatter": "cucumber-json-formatter",
+      "output": "cypress/reports/cucumber-json/cucumber-report.json"
+    }
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.4",
+    "@cypress/webpack-preprocessor": "^6.0.1",
+    "@types/cypress": "^1.1.3",
+    "cypress": "^13.8.1",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5"
+  }
+}
